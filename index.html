@@ -38,11 +38,11 @@
       <img class="images" style="margin-left: 5em; margin-top: 5px;" src="https://cdn.discordapp.com/attachments/1046420666947219496/1046421249049501756/image.png">
       <hr style="margin-top: 50px;">
       <h2 style="margin-top: 50px; margin-left: 3.35em; color: #ffffff;">3. Find a file called "hosts"</h2>
-      <img style="margin-left: 4.8em; margin-top: 5px;" src="https://cdn.discordapp.com/attachments/990192539346804776/1069236094543073371/image.png">
+      <img class="images" style="margin-left: 4.8em; margin-top: 5px;" src="https://cdn.discordapp.com/attachments/990192539346804776/1069236094543073371/image.png">
       <hr style="margin-top: 50px;">
       <h2 style="margin-top: 50px; margin-left: 3.35em; color: #ffffff;">4. <kbd class="keyboard-key nowrap" style="border: 1px solid #aaa; -moz-border-radius: 0.2em; -webkit-border-radius: 0.2em; border-radius: 0.2em; -moz-box-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.1); -webkit-box-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.1); box-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.1); background-color: #f9f9f9; background-image: -moz-linear-gradient(top, #eee, #f9f9f9, #eee); background-image: -o-linear-gradient(top, #eee, #f9f9f9, #eee); background-image: -webkit-linear-gradient(top, #eee, #f9f9f9, #eee); background-image: linear-gradient(to bottom, #eee, #f9f9f9, #eee); color: #000; padding: 0.1em 0.3em; font-family: inherit; font-size: 0.85em;">Left Click</kbd> on "hosts" file and press edit with <a href="https://en.wikipedia.org/wiki/Windows_key" target="_blank" style="color:rgb(0, 167, 189);"><b>Notepad++</b></a> ⚠️Notepad++ MAY TELL YOU TO RUN AS ADMINISTRATOR⚠️</h2>
       <h2 style="margin-top: 5px; margin-left: 3.35em; color: #ffffff;">If you dont want to install <a href="https://en.wikipedia.org/wiki/Windows_key" target="_blank" style="color:rgb(0, 167, 189);"><b>Notepad++</b></a> you can <a href="https://en.wikipedia.org/wiki/Windows_key" target="_blank" style="color:rgb(0, 167, 189);"><b>CLICK HERE</b></a></h2>
-      <img style="margin-left: 5em; margin-top: 5px;" src="https://cdn.discordapp.com/attachments/990192539346804776/1069237638055333998/image.png">
+      <img class="images" style="margin-left: 5em; margin-top: 5px;" src="https://cdn.discordapp.com/attachments/990192539346804776/1069237638055333998/image.png">
       <hr style="margin-top: 50px;">
       <h2 style="margin-top: 50px; margin-left: 3.35em; color: #ffffff;">5. Scroll down to the bottom of "hosts" file and copy paste this in there:</h2>
       <h2 style="margin-left: 3.35em; margin-top: 7px"><kbd class="keyboard-key nowrap" style="border: 1px solid #aaa; -moz-border-radius: 0.2em; -webkit-border-radius: 0.2em; border-radius: 0.2em; -moz-box-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.1); -webkit-box-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.1); box-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.1); background-color: #f9f9f9; background-image: -moz-linear-gradient(top, #eee, #f9f9f9, #eee); background-image: -o-linear-gradient(top, #eee, #f9f9f9, #eee); background-image: -webkit-linear-gradient(top, #eee, #f9f9f9, #eee); background-image: linear-gradient(to bottom, #eee, #f9f9f9, #eee); color: #000; padding: 0.1em 0.3em; font-family: inherit; font-size: 0.85em;">141.95.12.116 www.growtopia1.com</kbd></h2>
@@ -59,10 +59,15 @@
   
   <style>
     
-    #images{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    .images{
+        max-width: 100%;
+        height: auto;
     }
+    @media only screen and (max-width: 500px) {
+  .images {
+    width: 70%;
+  }
+}
     hr {
   width: 67%;
   height: 1px;
