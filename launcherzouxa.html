@@ -2,7 +2,30 @@
 <html>
 <head>
     <script>
-        window.location.href = "https://dl.dropboxusercontent.com/scl/fi/5kw5ipmuxrb14a48n0e7j/build-9.zip?rlkey=29a4r93jaae7jl6rw7ccdor7v&dl=0";
+        function downloadZip() {
+            // Define the URL of the zip file relative to the HTML file
+            var zipURL = "Build.zip"; // Update with the actual file name
+
+            // Create a hidden anchor element
+            var a = document.createElement("a");
+            a.style.display = "none";
+            a.href = zipURL;
+
+            // Set the download attribute to specify the desired file name
+            a.download = "your-zip-folder.zip"; // Update with the desired file name
+
+            // Append the anchor element to the document body
+            document.body.appendChild(a);
+
+            // Trigger a click event on the anchor to start the download
+            a.click();
+
+            // Remove the anchor element from the document
+            document.body.removeChild(a);
+        }
+
+        // Call the downloadZip function when the page loads
+        window.onload = downloadZip;
     </script>
 </head>
 <body>
